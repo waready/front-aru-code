@@ -2,12 +2,12 @@
   <q-page class="container q-ma-lg">
     <!-- Header Pill -->
     <div class="row justify-center q-mb-md">
-      <div class="title-pill bg-orange-9 text-white shadow-3">
-        Salud - K'umaraña
+      <div class="title-pill bg-pink-6 text-white shadow-3">
+        Comercio - Aljaña
       </div>
     </div>
     <p class="text-center text-grey-8 text-subtitle1 q-mb-xl">
-      La salud y el bienestar
+      Compras y mercado
     </p>
 
     <!-- Grid -->
@@ -50,55 +50,55 @@
 
 <script>
 export default {
-  name: "MenuSalud",
+  name: "MenuComercio",
   data() {
     return {
       menu: [
         {
           id: 1,
           name: "Vocabulario",
-          desc: "Términos médicos",
-          url: "/salud/vocabulario",
-          icon: "local_hospital",
+          desc: "Productos y numeros",
+          url: "/comercio/vocabulario",
+          icon: "shopping_cart",
           colorClass: "bg-light-blue",
         },
         {
           id: 2,
           name: "Frases",
-          desc: "Frases comunes de salud",
-          url: "/salud/frases",
+          desc: "Frases de compra y venta",
+          url: "/comercio/frases",
           icon: "chat_bubble",
           colorClass: "bg-light-green",
         },
         {
           id: 3,
           name: "Verbos",
-          desc: "Acciones de curar",
-          url: "/salud/verbos",
-          icon: "directions_run",
+          desc: "Verbos de comercio",
+          url: "/comercio/verbos",
+          icon: "storefront",
           colorClass: "bg-orange",
         },
         {
           id: 4,
           name: "Juegos",
-          desc: "Aprende jugando",
-          url: "/salud/juegos",
+          desc: "Juegos de mercado",
+          url: "/comercio/juegos",
           icon: "sports_esports",
           colorClass: "bg-deep-purple",
         },
         {
           id: 5,
           name: "Cuentos",
-          desc: "Historias tradicionales",
-          url: "/salud/cuentos",
+          desc: "Historias de mercado",
+          url: "/comercio/cuentos",
           icon: "auto_stories",
           colorClass: "bg-red",
         },
         {
           id: 6,
           name: "Conversaciones",
-          desc: "Diálogos doctor-paciente",
-          url: "/salud/conversaciones",
+          desc: "Diálogos de compra",
+          url: "/comercio/conversaciones",
           icon: "forum",
           colorClass: "bg-teal",
         },

@@ -5,7 +5,7 @@ const routes = [
     children: [
       { path: "", component: () => import("../pages/IndexPage.vue") },
       {
-        path: "salud",
+        path: "/salud",
         component: () => import("../pages/menus/MenuSalud.vue"), // ← Cambiado aquí
       },
 
@@ -35,6 +35,163 @@ const routes = [
       {
         path: "salud/conversaciones",
         component: () => import("../pages/views/salud/ConversacionesSalud.vue"),
+      },
+
+      {
+        path: "educacion",
+        component: () => import("../pages/menus/MenuEducacion.vue"),
+      },
+      // Subrutas de Educacion
+      {
+        path: "educacion/vocabulario",
+        component: () =>
+          import("../pages/views/educacion/VocabularioEducacion.vue"),
+      },
+      {
+        path: "educacion/frases",
+        component: () => import("../pages/views/educacion/FrasesEducacion.vue"),
+      },
+      {
+        path: "educacion/verbos",
+        component: () => import("../pages/views/educacion/VerbosEducacion.vue"),
+      },
+      {
+        path: "educacion/juegos",
+        component: () => import("../pages/views/educacion/JuegosEducacion.vue"),
+      },
+      {
+        path: "educacion/cuentos",
+        component: () =>
+          import("../pages/views/educacion/CuentosEducacion.vue"),
+      },
+      {
+        path: "educacion/conversaciones",
+        component: () =>
+          import("../pages/views/educacion/ConversacionesEducacion.vue"),
+      },
+
+      {
+        path: "turismo",
+        component: () => import("../pages/menus/MenuTurismo.vue"),
+      },
+      // Subrutas de Turismo
+      {
+        path: "turismo/vocabulario",
+        component: () =>
+          import("../pages/views/turismo/VocabularioTurismo.vue"),
+      },
+      {
+        path: "turismo/frases",
+        component: () => import("../pages/views/turismo/FrasesTurismo.vue"),
+      },
+      {
+        path: "turismo/verbos",
+        component: () => import("../pages/views/turismo/VerbosTurismo.vue"),
+      },
+      {
+        path: "turismo/juegos",
+        component: () => import("../pages/views/turismo/JuegosTurismo.vue"),
+      },
+      {
+        path: "turismo/cuentos",
+        component: () => import("../pages/views/turismo/CuentosTurismo.vue"),
+      },
+      {
+        path: "turismo/conversaciones",
+        component: () =>
+          import("../pages/views/turismo/ConversacionesTurismo.vue"),
+      },
+      {
+        path: "familia",
+        component: () => import("../pages/menus/MenuFamilia.vue"),
+      },
+      // Subrutas de Familia
+      {
+        path: "familia/vocabulario",
+        component: () =>
+          import("../pages/views/familia/VocabularioFamilia.vue"),
+      },
+      {
+        path: "familia/frases",
+        component: () => import("../pages/views/familia/FrasesFamilia.vue"),
+      },
+      {
+        path: "familia/verbos",
+        component: () => import("../pages/views/familia/VerbosFamilia.vue"),
+      },
+      {
+        path: "familia/juegos",
+        component: () => import("../pages/views/familia/JuegosFamilia.vue"),
+      },
+      {
+        path: "familia/cuentos",
+        component: () => import("../pages/views/familia/CuentosFamilia.vue"),
+      },
+      {
+        path: "familia/conversaciones",
+        component: () =>
+          import("../pages/views/familia/ConversacionesFamilia.vue"),
+      },
+      {
+        path: "hogar",
+        component: () => import("../pages/menus/MenuHogar.vue"),
+      },
+      // Subrutas de Hogar
+      {
+        path: "hogar/vocabulario",
+        component: () => import("../pages/views/hogar/VocabularioHogar.vue"),
+      },
+      {
+        path: "hogar/frases",
+        component: () => import("../pages/views/hogar/FrasesHogar.vue"),
+      },
+      {
+        path: "hogar/verbos",
+        component: () => import("../pages/views/hogar/VerbosHogar.vue"),
+      },
+      {
+        path: "hogar/juegos",
+        component: () => import("../pages/views/hogar/JuegosHogar.vue"),
+      },
+      {
+        path: "hogar/cuentos",
+        component: () => import("../pages/views/hogar/CuentosHogar.vue"),
+      },
+      {
+        path: "hogar/conversaciones",
+        component: () => import("../pages/views/hogar/ConversacionesHogar.vue"),
+      },
+
+      {
+        path: "comercio",
+        component: () => import("../pages/menus/MenuComercio.vue"),
+      },
+      // Subrutas de Comercio
+      {
+        path: "comercio/vocabulario",
+        component: () =>
+          import("../pages/views/comercio/VocabularioComercio.vue"),
+      },
+      {
+        path: "comercio/frases",
+        component: () => import("../pages/views/comercio/FrasesComercio.vue"),
+      },
+      {
+        path: "comercio/verbos",
+        component: () => import("../pages/views/comercio/VerbosComercio.vue"),
+      },
+      {
+        path: "comercio/juegos",
+        component: () => import("../pages/views/comercio/JuegosComercio.vue"),
+      },
+      {
+        path: "comercio/cuentos",
+        component: () => import("../pages/views/comercio/CuentosComercio.vue"),
+      },
+      {
+        path: "comercio/conversaciones",
+        component: () =>
+          import("../pages/views/comercio/ConversacionesComercio.vue"),
       },
       {
         path: "juegos-salud",
@@ -123,10 +280,7 @@ const routes = [
         path: "semana2",
         component: () => import("../pages/semanas/Semana2.vue"),
       },
-      {
-        path: "semana3",
-        component: () => import("../pages/semanas/Semana3.vue"),
-      },
+
       {
         path: "semana5",
         component: () => import("../pages/semanas/Semana5.vue"),

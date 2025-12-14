@@ -2,12 +2,10 @@
   <q-page class="container q-ma-lg">
     <!-- Header Pill -->
     <div class="row justify-center q-mb-md">
-      <div class="title-pill bg-orange-9 text-white shadow-3">
-        Salud - K'umaraña
-      </div>
+      <div class="title-pill bg-orange-10 text-white shadow-3">Hogar - Uta</div>
     </div>
     <p class="text-center text-grey-8 text-subtitle1 q-mb-xl">
-      La salud y el bienestar
+      La casa y el hogar
     </p>
 
     <!-- Grid -->
@@ -50,55 +48,55 @@
 
 <script>
 export default {
-  name: "MenuSalud",
+  name: "MenuHogar",
   data() {
     return {
       menu: [
         {
           id: 1,
           name: "Vocabulario",
-          desc: "Términos médicos",
-          url: "/salud/vocabulario",
-          icon: "local_hospital",
+          desc: "Partes de la casa",
+          url: "/hogar/vocabulario",
+          icon: "home",
           colorClass: "bg-light-blue",
         },
         {
           id: 2,
           name: "Frases",
-          desc: "Frases comunes de salud",
-          url: "/salud/frases",
+          desc: "Frases en el hogar",
+          url: "/hogar/frases",
           icon: "chat_bubble",
           colorClass: "bg-light-green",
         },
         {
           id: 3,
           name: "Verbos",
-          desc: "Acciones de curar",
-          url: "/salud/verbos",
-          icon: "directions_run",
+          desc: "Verbos cotidianos",
+          url: "/hogar/verbos",
+          icon: "cleaning_services",
           colorClass: "bg-orange",
         },
         {
           id: 4,
           name: "Juegos",
-          desc: "Aprende jugando",
-          url: "/salud/juegos",
+          desc: "Juegos sobre la casa",
+          url: "/hogar/juegos",
           icon: "sports_esports",
           colorClass: "bg-deep-purple",
         },
         {
           id: 5,
           name: "Cuentos",
-          desc: "Historias tradicionales",
-          url: "/salud/cuentos",
+          desc: "Historias del hogar",
+          url: "/hogar/cuentos",
           icon: "auto_stories",
           colorClass: "bg-red",
         },
         {
           id: 6,
           name: "Conversaciones",
-          desc: "Diálogos doctor-paciente",
-          url: "/salud/conversaciones",
+          desc: "Charlas familiares",
+          url: "/hogar/conversaciones",
           icon: "forum",
           colorClass: "bg-teal",
         },

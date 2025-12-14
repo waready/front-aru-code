@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import InicioComponent from "components/InicioComponent.vue";
+import InicioComponent from "../components/InicioComponent.vue";
 
 export default {
   name: "IndexPage",

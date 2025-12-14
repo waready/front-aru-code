@@ -4,7 +4,7 @@
     <q-header elevated class="bg-orange-6">
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="drawer = !drawer" />
-        <q-toolbar-title></q-toolbar-title>
+        <q-toolbar-title>Aymara Yatiqañataki</q-toolbar-title>
         <q-btn flat round dense icon="logout">
           <q-tooltip>Salir</q-tooltip>
         </q-btn>
@@ -33,9 +33,9 @@
           <q-item
             clickable
             v-ripple
-            :active="tab === 'inicio'"
+            :active="$route.path === '/'"
             active-class="bg-orange-7"
-            @click="tab = 'inicio'"
+            to="/"
           >
             <q-item-section avatar>
               <q-icon name="home" />
@@ -102,100 +102,22 @@
 
     <!-- Main Content -->
     <q-page-container>
-      <q-page class="bg-grey-2">
-        <!-- Tabs -->
-        <q-tabs
-          v-model="tab"
-          dense
-          class="bg-white text-grey-7"
-          active-color="orange-6"
-          indicator-color="orange-6"
-          align="left"
-        >
-          <q-tab name="inicio" icon="home" label="Inicio" />
-          <q-tab name="comunicados" icon="article" label="Comunicados" />
-          <q-tab name="nosotros" icon="group" label="Nosotros" />
-          <q-tab name="ciclos" icon="apps" label="Ciclos" />
-          <q-tab
-            name="notificaciones"
-            icon="notifications"
-            label="Notificaciones"
-          />
-        </q-tabs>
-
-        <q-separator />
-
-        <!-- Tab Panels -->
-        <q-tab-panels v-model="tab" animated>
-          <!-- Panel Inicio -->
-          <q-tab-panel name="inicio" class="q-pa-none">
-            <inicio-component />
-          </q-tab-panel>
-
-          <!-- Panel Comunicados -->
-          <q-tab-panel name="comunicados">
-            <comunicados-component v-model="postText" />
-          </q-tab-panel>
-
-          <!-- Otros paneles -->
-          <q-tab-panel name="nosotros">
-            <div class="q-pa-md text-center text-grey-6">
-              Contenido de Nosotros
-            </div>
-          </q-tab-panel>
-
-          <q-tab-panel name="ciclos">
-            <div class="q-pa-md text-center text-grey-6">
-              Contenido de Ciclos
-            </div>
-          </q-tab-panel>
-
-          <q-tab-panel name="notificaciones">
-            <div class="q-pa-md text-center text-grey-6">
-              Contenido de Notificaciones
-            </div>
-          </q-tab-panel>
-        </q-tab-panels>
-
-        <!-- Footer -->
-        <div
-          class="fixed-bottom text-center q-pa-sm text-grey-6 bg-grey-2"
-          style="font-size: 12px"
-        >
-          © 2025 Aru-Code .
-        </div>
-      </q-page>
+      <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
 import { ref } from "vue";
-import InicioComponent from "components/InicioComponent.vue";
-import ComunicadosComponent from "components/ComunicadosComponent.vue";
 
 export default {
   name: "MainLayout",
-  components: {
-    InicioComponent,
-    ComunicadosComponent,
-  },
   setup() {
     const drawer = ref(true);
-    const tab = ref("inicio");
-    const postText = ref("");
 
     return {
       drawer,
-      tab,
-      postText,
     };
   },
 };
 </script>
-
-<style>
-.q-tab {
-  text-transform: none;
-}
-</style>
