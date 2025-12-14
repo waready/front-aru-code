@@ -1,0 +1,32 @@
+{"Personales":
+[
+  { "id": 1, "name": "Naya", "nombre": "Yo (1° persona)" ,"name_folder":""},
+  { "id": 2, "name": "Juma", "nombre": "Tú (2° persona)" ,"name_folder":""},
+  { "id": 3, "name": "Jupa", "nombre": "Él (3° persona)" ,"name_folder":""},
+  { "id": 4, "name": "Jupa", "nombre": "Ella (3° persona)" ,"name_folder":""},
+  { "id": 5, "name": "Jiwasa", "nombre": "Nosotros (4° persona)" ,"name_folder":""},
+  { "id": 6, "name": "Jiwasanaka", "nombre": "Nosotros" ,"name_folder":""},
+  { "id": 7, "name": "Nänaka", "nombre": "Nosotros" ,"name_folder":""},
+  { "id": 8, "name": "Jumanaka", "nombre": "Ustedes" ,"name_folder":""},
+  { "id": 9, "name": "Jupanaka", "nombre": "Ellos" ,"name_folder":""}
+],
+"Demostrativos":
+[
+  { "id": 1, "name": "Aka", "nombre": "esto, esta, este" ,"name_folder":""},
+  { "id": 2, "name": "Uka", "nombre": "eso, esa, ese" ,"name_folder":""},
+  { "id": 3, "name": "Khaya", "nombre": "aquel, aquella, aquello" ,"name_folder":""},
+  { "id": 4, "name": "Akanaka", "nombre": "Estos (as)" ,"name_folder":""},
+  { "id": 5, "name": "Ukanaka", "nombre": "Esos (as)" ,"name_folder":""},
+  { "id": 6, "name": "Khayanaka", "nombre": "Aquellos (as)" ,"name_folder":""}
+],
+"Interrogativos":
+[
+  { "id": 1, "name": "¿Kuna?", "nombre": "¿Qué?" ,"name_folder":""},
+  { "id": 2, "name": "¿Kawki?", "nombre": "¿Dónde?" ,"name_folder":""},
+  { "id": 3, "name": "¿Khithi?", "nombre": "¿Quién?" ,"name_folder":""},
+  { "id": 4, "name": "¿Qawqha?", "nombre": "¿Cuánto?" ,"name_folder":""},
+  { "id": 5, "name": "¿Kunjama?", "nombre": "¿Cómo?" ,"name_folder":""},
+  { "id": 6, "name": "¿Kuna pacha? ¿Kunawrasa?", "nombre": "¿Cuándo?" ,"name_folder":""},
+  { "id": 7, "name": "¿Kawkïri? ¿Kawknïri?", "nombre": "¿Cuál?" ,"name_folder":""}
+]
+}

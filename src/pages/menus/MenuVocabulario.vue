@@ -45,93 +45,93 @@ export default {
           name: "Animales",
           img: "statics/menu/menu_animal.jpg",
           desc: "Animales domésticos en aimara...",
-          url: "/animales"
+          url: "/animales",
         },
         {
           id: 2,
           name: "Arbustos",
           img: "statics/menu/menu_arbustos.jpg",
           desc: "Palabras de arbustos y plantas en aimara...",
-          url: "/arbustos_arboles"
+          url: "/arbustos_arboles",
         },
         {
           id: 3,
           name: "Chacra y campo",
           img: "statics/menu/menu_chacra.jpg",
           desc: "Palabras de la chacra y del campo en aimara...",
-          url: "/chacra_campo"
+          url: "/chacra_campo",
         },
         {
           id: 4,
           name: "Cuerpo humano",
           img: "statics/menu/menu_cuerpo.jpg",
           desc: "Palabras de nuestro cuerpo humano en aimara...",
-          url: "/cuerpo_humano"
+          url: "/cuerpo_humano",
         },
         {
           id: 5,
           name: "Familia",
           img: "statics/menu/menu_familia.jpg",
           desc: "Palabras de la familia y personas en aimara...",
-          url: "/familia"
+          url: "/familia",
         },
         {
           id: 6,
           name: "Lugares",
           img: "statics/menu/menu_lugares.jpg",
           desc: "Palabras de lugares o espacios de la naturaleza creados por el hombre en aimara...",
-          url: "/lugares"
+          url: "/lugares",
         },
         {
           id: 7,
           name: "Naturaleza",
           img: "statics/menu/menu_naturaleza.jpg",
           desc: "Palabras que hay en la naturaleaza en aimara...",
-          url: "/naturaleza"
+          url: "/naturaleza",
         },
         {
           id: 8,
           name: "Minerales",
           img: "statics/menu/menu_minerales.jpg",
           desc: "Palabras de minerales en aimara...",
-          url: "/minerales"
+          url: "/minerales",
         },
         {
           id: 9,
           name: "Ropa",
           img: "statics/menu/menu_ropa.jpg",
           desc: "Palabras sobre ropa en aimara...",
-          url: "/ropa"
+          url: "/ropa",
         },
         {
           id: 10,
           name: "Vegetales",
           img: "statics/menu/menu_vegetal.jpg",
           desc: "Vegetales en aimara...",
-          url: "/vegetales"
+          url: "/vegetales",
         },
         {
           id: 11,
           name: "Palabras comunes",
           img: "statics/menu/menu_palabras.jpg",
           desc: "Algunas palabras en aimara...",
-          url: "/palabras_comunes"
+          url: "/palabras_comunes",
         },
         {
           id: 12,
           name: "Pronombres",
           img: "statics/menu/menu_pronombres.jpg",
           desc: "Pronombres personales, demostrativos e interrogativos en aimara...",
-          url: "/pronombres"
+          url: "/pronombres",
         },
         {
           id: 13,
           name: "Verbo infinitivo",
           img: "statics/menu/menu_verbos.jpg",
           desc: "Verbos mas usados en aimara...",
-          url: "/verbos_infinitivos"
-        }
-      ]
+          url: "/verbos_infinitivos",
+        },
+      ],
     };
   },
   created() {
@@ -140,7 +140,7 @@ export default {
   methods: {
     onScroll(info) {
       this.scrollInfo = info;
-    }
-  }
+    },
+  },
 };
 </script>

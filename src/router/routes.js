@@ -133,33 +133,33 @@ const routes = [
           import("../pages/views/familia/ConversacionesFamilia.vue"),
       },
       {
-        path: "hogar",
-        component: () => import("../pages/menus/MenuHogar.vue"),
+        path: "fauna",
+        component: () => import("../pages/menus/MenuFauna.vue"),
       },
-      // Subrutas de Hogar
+      // Subrutas de Fauna
       {
-        path: "hogar/vocabulario",
-        component: () => import("../pages/views/hogar/VocabularioHogar.vue"),
-      },
-      {
-        path: "hogar/frases",
-        component: () => import("../pages/views/hogar/FrasesHogar.vue"),
+        path: "fauna/vocabulario",
+        component: () => import("../pages/views/fauna/VocabularioFauna.vue"),
       },
       {
-        path: "hogar/verbos",
-        component: () => import("../pages/views/hogar/VerbosHogar.vue"),
+        path: "fauna/frases",
+        component: () => import("../pages/views/fauna/FrasesFauna.vue"),
       },
       {
-        path: "hogar/juegos",
-        component: () => import("../pages/views/hogar/JuegosHogar.vue"),
+        path: "fauna/verbos",
+        component: () => import("../pages/views/fauna/VerbosFauna.vue"),
       },
       {
-        path: "hogar/cuentos",
-        component: () => import("../pages/views/hogar/CuentosHogar.vue"),
+        path: "fauna/juegos",
+        component: () => import("../pages/views/fauna/JuegosFauna.vue"),
       },
       {
-        path: "hogar/conversaciones",
-        component: () => import("../pages/views/hogar/ConversacionesHogar.vue"),
+        path: "fauna/cuentos",
+        component: () => import("../pages/views/fauna/CuentosFauna.vue"),
+      },
+      {
+        path: "fauna/conversaciones",
+        component: () => import("../pages/views/fauna/ConversacionesFauna.vue"),
       },
 
       {
@@ -349,6 +349,24 @@ const routes = [
         path: "verbos_infinitivos",
         component: () =>
           import("../pages/views/vocabulario/verbos_infinitivos.vue"),
+      },
+      {
+        path: "juego_memoria",
+        component: () =>
+          import("../pages/juegos/juegoMemoria/JuegoMemoria.vue"),
+      },
+      {
+        path: "juego_orden_numero",
+        component: () => import("../pages/juegos/OrdenNumero.vue"),
+      },
+      {
+        path: "juego_ahorcado_1",
+        component: () => import("../pages/juegos/Crusigrama.vue"),
+      },
+
+      {
+        path: "juego_ahorcado",
+        component: () => import("../pages/juegos/AhorcadoFinal.vue"),
       },
     ],
   },

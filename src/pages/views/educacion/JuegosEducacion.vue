@@ -1,12 +1,14 @@
 <template>
-  <div class="q-pa-md">
-    <h4 class="text-center">Juegos de Educación</h4>
-    <p class="text-center">Contenido en construcción...</p>
-  </div>
+  <MenuJuego />
 </template>
 
 <script>
+import MenuJuego from "../../menus/MenuJuego.vue";
+
 export default {
   name: "JuegosEducacion",
+  components: {
+    MenuJuego,
+  },
 };
 </script>

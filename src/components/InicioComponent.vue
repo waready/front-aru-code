@@ -88,16 +88,16 @@
         </q-card>
       </div>
 
-      <!-- Hogar Card -->
+      <!-- Fauna Card -->
       <div class="col-12 col-md-4">
-        <q-card class="category-card" flat bordered @click="navegarA('/hogar')">
+        <q-card class="category-card" flat bordered @click="navegarA('/fauna')">
           <q-card-section class="text-center">
-            <div class="icon-circle bg-orange">
-              <q-icon name="home" size="50px" color="white" />
+            <div class="icon-circle bg-brown">
+              <q-icon name="pets" size="50px" color="white" />
             </div>
-            <h6 class="text-h6 q-mt-md q-mb-sm">Hogar - Uta</h6>
+            <h6 class="text-h6 q-mt-md q-mb-sm">Fauna - Uywanaka</h6>
             <p class="text-body2 text-grey-7">
-              Palabras relacionadas con la casa y el hogar
+              Conoce los animales y la vida silvestre
             </p>
           </q-card-section>
         </q-card>
@@ -198,6 +198,10 @@ export default {
 
 .bg-orange {
   background: #ff8f00;
+}
+
+.bg-brown {
+  background: #795548;
 }
 
 .bg-pink {
